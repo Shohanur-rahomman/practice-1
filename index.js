@@ -35,3 +35,45 @@ const person = {
 
 const {name,age,country}=person;
 // console.log(name,age,country);
+// normale use
+const user = {
+    name: "Rahim",
+    age: 25,
+    city: "Dhaka"
+};
+
+const newObj = Object.entries(user);
+
+const users = {
+    name: "Rahim",
+    age: 25,
+    city: "Dhaka2",
+};
+
+const newUser = Object.entries(users.city);
+users.city = 'joupur';
+const upDateUsr = Object.entries(users.city)
+// console.log(newUser);
+
+const users5 = {
+    name: "Rahim",
+    age: 25,
+    city: "Dhaka2",
+};
+
+Object.freeze(users5);
+
+users5.name = 'korim';
+// console.log(users5);
+
+const user3 = {
+    name: "Rahim",
+    age: 25,
+    city: "Dhaka"
+};
+console.log(user3['name']);
+console.log(user3['age']);
+
+
+
+
